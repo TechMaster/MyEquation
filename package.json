@@ -1,0 +1,18 @@
+{
+  "name": "equation",
+  "version": "1.0.0",
+  "description": "equation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -S"
+  },
+  "keywords": [
+    "equation"
+  ],
+  "author": "nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "readline-sync": "^1.4.6"
+  }
+}
