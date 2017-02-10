@@ -17,15 +17,10 @@ exports.equation = (a,b,c) => {
         throw new Error("equation infinity");
     }
 
-    else if(delta === 0){
-        let x = -b / (2 * a);
-        console.log(`equation have 2 values equally x1 = x2 = ${x}`);
-        return x;
-    }
-    
-    else{
-        let sqrt = Math.sqrt(delta);
-        log('equation have 2 different values');
-        return [(-b + sqrt) / 2 * a, (-b - sqrt) / 2 * a];
-    }
+    let sqrtDelta = Math.sqrt(delta);
+    return [(-b + sqrtDelta) /(2 * a) , (-b - sqrtDelta) / (2 * a)];
+}
+
+exports.findY = (a,b,c,x) => {
+    return a * x * x + b * x + c;
 }
